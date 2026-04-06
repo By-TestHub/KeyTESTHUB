@@ -3,48 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GGHUB | PREMIUM SHOP</title>
+    <title>TESTHUB Premium Script</title>
     <style>
-        /* 🎨 สไตล์หลักคุมโทน GGHUB */
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;700&display=swap');
+
         body { background-color: #0d0d0d; color: #ffffff; font-family: 'Kanit', sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
-        .shop-card { background: #1a1a1a; padding: 35px; border-radius: 25px; border: 2px solid #ffd700; text-align: center; width: 340px; box-shadow: 0 0 30px rgba(255, 215, 0, 0.1); }
         
-        .price-tag { font-size: 45px; font-weight: bold; color: #ffd700; margin: 15px 0; text-shadow: 0 0 10px rgba(255, 215, 0, 0.3); }
+        @keyframes rainbow {
+            0% { border-color: #ff0000; box-shadow: 0 0 15px #ff0000; }
+            20% { border-color: #ff8800; box-shadow: 0 0 15px #ff8800; }
+            40% { border-color: #ffff00; box-shadow: 0 0 15px #ffff00; }
+            60% { border-color: #00ff00; box-shadow: 0 0 15px #00ff00; }
+            80% { border-color: #0088ff; box-shadow: 0 0 15px #0088ff; }
+            100% { border-color: #ff00ff; box-shadow: 0 0 15px #ff00ff; }
+        }
+
+        @keyframes rainbow-text {
+            0% { color: #ff0000; }
+            20% { color: #ff8800; }
+            40% { color: #ffff00; }
+            60% { color: #00ff00; }
+            80% { color: #0088ff; }
+            100% { color: #ff00ff; }
+        }
+
+        .shop-card { 
+            background: #1a1a1a; 
+            padding: 35px; 
+            border-radius: 25px; 
+            border: 3px solid #ffd700; 
+            text-align: center; 
+            width: 340px; 
+            animation: rainbow 5s linear infinite; 
+        }
         
-        /* 📜 ส่วนคำแนะนำที่ลูกพี่ต้องการ */
+        .price-tag { 
+            font-size: 50px; 
+            font-weight: bold; 
+            margin: 15px 0; 
+            animation: rainbow-text 5s linear infinite; 
+        }
+        
         .buy-instruction { background: #000; padding: 15px; border-radius: 12px; margin-bottom: 20px; border: 1px dashed #444; }
         .text-info { font-size: 14px; color: #bbb; line-height: 1.6; }
         
-        /* 🔵 ปุ่ม Discord */
-        .btn-discord { background-color: #5865F2; color: #fff; text-decoration: none; padding: 14px; border-radius: 12px; font-size: 16px; font-weight: bold; display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 15px; transition: 0.3s; box-shadow: 0 4px 15px rgba(88, 101, 242, 0.3); }
-        .btn-discord:hover { background-color: #4752c4; transform: translateY(-2px); }
+        .btn-discord { 
+            background-color: #5865F2; 
+            color: #fff; 
+            text-decoration: none; 
+            padding: 14px; 
+            border-radius: 12px; 
+            font-size: 16px; 
+            font-weight: bold; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 12px; 
+            margin-top: 15px; 
+            transition: 0.3s; 
+            box-shadow: 0 4px 15px rgba(88, 101, 242, 0.4); 
+        }
+        .btn-discord:hover { background-color: #4752c4; transform: translateY(-3px); }
         
-        /* 📥 ช่องใส่ลิงก์ (ยังเก็บไว้เผื่อลูกพี่ใช้ส่งอัตโนมัติ) */
-        input { width: 90%; padding: 12px; border-radius: 10px; border: 1px solid #333; background: #000; color: #fff; margin-top: 15px; text-align: center; font-size: 13px; }
+        .discord-icon {
+            width: 24px;
+            height: 24px;
+        }
         
-        .footer-text { font-size: 11px; color: #555; margin-top: 15px; }
+        .footer-text { font-size: 11px; color: #555; margin-top: 20px; }
     </style>
 </head>
 <body>
 
     <div class="shop-card">
-        <h1 style="font-size: 24px; color: #ffd700; margin-bottom: 5px;">PREMIUM SCRIPT</h1>
-        <div class="price-tag">50 THB</div>
+        <h1 style="font-size: 24px; margin-bottom: 5px; animation: rainbow-text 5s linear infinite;">Premium Script</h1>
+        
+        <div class="price-tag">10 THB</div>
 
         <div class="buy-instruction">
             <p class="text-info">
-                หากคุณต้องการซื้อสคริปกดที่ปุ่มด้านล่างเพื่อ <br>
+                หากคุณต้องการซื้อคีย์กดที่ปุ่มด้านล่างเพื่อ <br>
                 <strong>"เข้าร่วม Discord"</strong> <br>
-                และส่งลิ้งส่งอั่งเปาที่ห้อง <strong>#ส่งลิ้งอั่งเปา</strong>
+                และส่งข้อความซื้อคีย์ที่ห้อง <strong>#ซื้อคีย์ซื้อสคริป</strong>
             </p>
         </div>
 
         <a href="https://discord.gg/ccvCxMMMC6" target="_blank" class="btn-discord">
-            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" width="20" style="filter: invert(1);">
+            <img src="https://assets-global.website-files.com/6257ade0c743823a43583154/6257ade0c7438257015831d0_discord_icon_white.svg" class="discord-icon">
             เข้าร่วม Discord
         </a>
-
-        <p class="footer-text">โปรดรอแอดมินตรวจสอบ</p>
+<p class="footer-text">หลังจากนั้นโปรดรอแอดมินตอบกลับในแชทส่วนตัว</p>
     </div>
 
 </body>
